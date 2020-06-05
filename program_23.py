@@ -1,0 +1,10 @@
+from tkinter import *
+root=Tk()
+root.geometry('634x890')
+root.title('scroll bar')
+scrollbar=Scrollbar(root)
+scrollbar.pack(side=RIGHT,fill=Y)
+text=Text(root,yscrollcommand=scrollbar.set)
+text.pack(fill=BOTH,padx=25,pady=25)
+scrollbar.config(command=text.yview)
+root.mainloop()

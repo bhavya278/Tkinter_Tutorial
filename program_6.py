@@ -1,0 +1,12 @@
+from tkinter import *
+root=Tk()
+root.geometry('600x500')
+f1=Frame(root,bg='grey',borderwidth=7,relief=SUNKEN)
+f1.pack(side=LEFT,fill='y')
+f2=Frame(root,borderwidth=9,bg='grey',relief=SUNKEN)
+f2.pack(side=TOP,fill='x')
+l=Label(f1,text='bhavya here')
+l.pack(pady=142)
+l=Label(f2,text='doing coding',font='Helvetica 16 bold',fg='red',pady=16)
+l.pack()
+root.mainloop()
